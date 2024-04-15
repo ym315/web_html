@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>GiftLetter Admin</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/menu.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <article class="main_left"></article>
+        <article class="main_left_dummy"></article>        
+        <article class="main_right">
+            <section class="thinfo">
+                <h3>정산조회</h3>
+                <div class="searchinfo">
+                    <span class="title">조회기간 </span>
+                    <div>                    
+                        <button class="day_set">오늘</button>
+                        <button class="day_set">1주일</button>
+                        <button class="day_set">1개월</button>
+                    </div>
+                    <div>
+                        <input class="day_date" type="date"> ~ <input class="day_date" type="date">    
+                    </div>                        
+                    <div>
+                        <button class="btn btn_search">조회</button> 
+                        <button class="btn btn_excel">엑셀다운</button> 
+                    </div>                        
+
+                </div>
+                <div>
+                    <ul class="thchart">
+                        <li class="content">                           
+                            <div class="circle"><i></i></div>
+                            <div class="contentdeail">
+                                <p class="title">교환건수</p>
+                                <p class="num">123,456</p>
+                            </div>                            
+                        </li>
+                        <li class="line"></li>
+                        <li class="content">                           
+                            <div class="circle"><i></i></div>
+                            <div class="contentdeail">
+                                <p class="title">교환금액</p>
+                                <p class="num">123,456</p>
+                            </div>                            
+                        </li>
+                        <li class="line"></li>
+                        <li class="content">                           
+                            <div class="circle"><i></i></div>
+                            <div class="contentdeail">
+                                <p class="title">취소금액</p>
+                                <p class="num">123,456</p>
+                            </div>                            
+                        </li>
+                        <li class="line"></li>
+                        <li class="content">                           
+                            <div class="circle"><i></i></div>
+                            <div class="contentdeail">
+                                <p class="title">정산금액 </p>
+                                <p class="num">123,456,890,99</p>
+                            </div>                            
+                        </li>                     
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table_summary">
+                        <h4>총 <span class="point">1234</span>건</h4>
+                        <div>
+                            <span class="title">보기 설정 </span>
+                            <select name="view_count" id="view">
+                                <option value="10">10개씩 보기 </option>
+                                <option value="20">20개씩 보기</option>
+                                <option value="50">50개씩 보기</option>
+                                <option value="100">100개씩 보기</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label  class="title" for="search">찾기</label>  
+                            <input class="text_normal" type="text" id="search">
+                        </div>
+                    </div>
+                    <div class="table_case">
+                        <table class="table_normal">
+                            <thead>
+                                <tr>
+                                    <td>순번</td>
+                                    <td>사용여부</td>
+                                    <td>상품명</td>
+                                    <td>사용일시</td>
+                                    <td>취소내역</td>
+                                    <td>상품가</td>
+                                    <td>사용금액</td>
+                                    <td>잔액</td>
+                                    <td>쿠폰번호</td>
+                                    <td>유효기간</td>
+                                    <td>사용지점</td>                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>미사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>미사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>미사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>미사용</td>
+                                    <td>[하이디라오 훠궈] 하이디라오 3만원권</td>
+                                    <td>2024-03-03 오후 12:00:00</td>
+                                    <td></td>
+                                    <td>30,000</td>
+                                    <td>20,000</td>
+                                    <td>10,000</td>
+                                    <td>123412341234</td>
+                                    <td>2025-03-03</td>
+                                    <td>명동점</td>
+                                </tr>
+                            </tbody>    
+                        </table>
+                    </div>
+                    <ul class="navi">
+                        <li><<</li>
+                        <li class="on"><a href="#">1</a></li>
+                        <li>2</li>
+                        <li>>></li>
+                    </ul>
+
+                </div>
+            </section>
+            
+            <footer></footer>
+        </article>
+
+
+        <!-- <a href="#"><p class="test">테스트용</p></a> -->
+    </main>
+
+
+    <aside></aside>
+
+    
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+        
+
+
+});
+</script>
+</body>
+
+</html>
