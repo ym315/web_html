@@ -67,6 +67,7 @@ $basecolor:#ebf9f7;
 .mt30 {margin-top:30px !important;}
 .mt10 {margin-top:10px !important;}
 .mb20 {margin-bottom:20px !important}
+.ma20tb {margin:20px 0;}
 .w80 {width:80px !important;}
 .w100 {width:100px !important;}
 .w200 {width: 200px !important;}
@@ -253,8 +254,7 @@ main{
   position: relative;
   width:100%;
   height:100%;
-  max-width:1920px;
-
+  // max-width:1920px;
 }
 
 
@@ -464,7 +464,7 @@ footer{
 }
 
 .counpon_search,.coupon_info{
-  @include layout(650px,0,50px);
+  @include layout(500px,0,20px);
   background: $clwhite;
   border:1px solid #ccc;
   
@@ -493,9 +493,9 @@ footer{
 
   //키패드공통
   .number , .sign{
-    width: 32%;
-    margin-bottom:2%;
-    height:100px;
+    width: 31%;
+    margin-bottom:3%;
+    height:70px;
     cursor: pointer; 
 
   }
@@ -526,7 +526,7 @@ footer{
       height: 30px;
     }
     i.reset{background-position:0px -27px }
-    i.delete{background-position:-35px -28px}
+    i.delete{background-position:-71px -28px}
   }
 }
 
@@ -543,9 +543,9 @@ footer{
   flex-direction: column;
   padding:30px 0;  
   
-  >img{width:100%; max-width: 300px;}
+  >img{width:100%; max-width: 200px;}
   >ul{
-    @include layout(450px,15px auto,0);
+    @include layout(90%,15px auto,0);
     
     li{
       padding:15px 0;
@@ -567,18 +567,44 @@ footer{
 }
 }
 .coupon_info2{
+  display:none;
+
+ width:1000px;
+ 
+
   .btn_2set{
+    @include layout(calc(100% - 20px),0 auto,0);    
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);    
     .btn{width:49%;}
   }
 }
 
-.coupon_cancle{
+.testdiv{
+  @include display(flex,space-around,flex-start);
+
+  >div{width:48%;}
+}
+.coupon_use_detail{
   width:100%;
+  height:610px;
+  position: relative;
+  // border:1px solid #eee;
+  // background: $clee;
+  padding:10px;
+}
+
+.coupon_cancle{
+  width:100% !important;
   border:1px solid $clcc;
   padding:15px;
   overflow: auto;
+  margin-top:30px;
   
   >table{
+    width:100%;
     overflow-x: scroll;
     border:1px solid $clcc;
     text-align: center;
@@ -673,9 +699,9 @@ footer{
         }
 
     }
-    &:nth-of-type(1){div.circle{background:#3A9092;i{background-position: -72px -27px;}}}
-    &:nth-of-type(3){div.circle{background:#863A92;i{background-position: -111px -27px;}}}
-    &:nth-of-type(5){div.circle{background:#924A3A;i{background-position: -152px -27px;}}}
+    &:nth-of-type(1){div.circle{background:#3A9092;i{background-position: -151px -27px;}}}
+    &:nth-of-type(3){div.circle{background:#863A92;i{background-position: -192px -27px;}}}
+    &:nth-of-type(5){div.circle{background:#924A3A;i{background-position: -234px -27px;}}}
     &:nth-of-type(7){div.circle{background:#3A6D92;i{background-position: -190px -27px;}}}
 
 
@@ -753,6 +779,7 @@ footer{
   z-index: 99;
   position: fixed;
   left:0; top:0;
+  display:none;
 }
 
 .popup{
