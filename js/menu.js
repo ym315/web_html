@@ -12,7 +12,8 @@ $(document).ready(function(){
 
         $('.btn_close').on('click',function(e){
             e.preventDefault();
-            $(this).parent().find('.popupdiv').hide();            
+            $(this).parents().find('.popupdiv').hide();            
+            
 
         });
     
