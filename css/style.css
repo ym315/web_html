@@ -556,7 +556,7 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 30px;
-  min-width: 1400px;
+  min-width: 1600px;
   max-width: 1640px;
   margin-left: 230px;
   margin-top: 60px;
@@ -720,16 +720,12 @@ footer {
 
 .coupon_info2 {
   display: none;
-  width: 1000px;
+  width: 900px;
 }
 .coupon_info2 .btn_2set {
   width: calc(100% - 20px);
   margin: 0 auto;
   padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .coupon_info2 .btn_2set .btn {
   width: 49%;

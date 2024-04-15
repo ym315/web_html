@@ -431,7 +431,7 @@ main{
 //우측 
 .main_right{
   @include layout(100%,0 auto,30px);  
-  min-width:1400px;
+  min-width:1600px;
   max-width: calc(1920px - 280px);
   margin-left:230px;
   margin-top:60px;
@@ -568,23 +568,21 @@ footer{
 }
 .coupon_info2{
   display:none;
-
- width:1000px;
+ width:900px;
  
 
   .btn_2set{
     @include layout(calc(100% - 20px),0 auto,0);    
-    position: absolute;
-    bottom:0;
-    left:50%;
-    transform: translateX(-50%);    
+    // position: absolute;
+    // bottom:0;
+    // left:50%;
+    // transform: translateX(-50%);    
     .btn{width:49%;}
   }
 }
 
 .testdiv{
   @include display(flex,space-around,flex-start);
-
   >div{width:48%;}
 }
 .coupon_use_detail{
