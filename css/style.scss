@@ -431,8 +431,8 @@ main{
 //우측 
 .main_right{
   @include layout(100%,0 auto,30px);  
-  min-width:1600px;
-  max-width: calc(1920px - 280px);
+  min-width:1500px;
+  max-width: 1600px;
   margin-left:230px;
   margin-top:60px;
   position: relative;
@@ -527,8 +527,9 @@ footer{
     }
     i.reset{background-position:0px -27px }
     i.delete{background-position:-71px -28px}
-  }
+  } 
 }
+
 .coupon_keypad2{
   @include layout(100%,20px 0,30px 20px);
 }
@@ -613,27 +614,27 @@ footer{
 }
 
 .coupon_cancle{
-  width:100% !important;
+  width:100%;
   border:1px solid $clcc;
-  padding:15px;
+  padding:10px;
   overflow: auto;
   margin-top:30px;
+  overflow-x: scroll;
   
   >table{
-    width:100%;
-    overflow-x: scroll;
+    width:100%;    
     border:1px solid $clcc;
     text-align: center;
     >thead{
       background:#E5EAED;
-      height:70px;
+      height:50px;
       td{
         width:auto;
-        min-width:150px;
+        min-width:100px;
         &.date{min-width:200px;}
       }
     }
-    td{border:1px solid $clcc; font-size: 15px; padding:20px 0;}
+    td{border:1px solid $clcc; font-size: 15px; padding:10px 0;}
     .btn{width:90%; height:40px;}
     
 
@@ -644,6 +645,7 @@ footer{
 //정산내역 페이지
 
 .thinfo{
+  width:90%;
   >div{
     @include layout(100%,25px auto,25px);
     background:$clwhite;
