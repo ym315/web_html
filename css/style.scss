@@ -529,12 +529,15 @@ footer{
     i.delete{background-position:-71px -28px}
   }
 }
+.coupon_keypad2{
+  @include layout(100%,20px 0,30px 20px);
+}
 
 .coupon_info{
   margin-left:30px;
   &:nth-of-type(3n){margin-left:0;}
-  display: none;
-
+  // display: none;
+}
 .coupon_detail{
   background:$clwhite;
   border:5px $glnavy solid;
@@ -545,8 +548,7 @@ footer{
   
   >img{width:100%; max-width: 200px;}
   >ul{
-    @include layout(90%,15px auto,0);
-    
+    @include layout(90%,15px auto,0);    
     li{
       padding:15px 0;
       border-bottom:1px solid $clcc;
@@ -565,9 +567,10 @@ footer{
     }
   }
 }
+.coupon_detail2{
+  border:none;
 }
 .coupon_info2{
-  display:none;
  width:900px;
  
 
@@ -581,9 +584,19 @@ footer{
   }
 }
 
-.testdiv{
+.coupon_cash{
   @include display(flex,space-around,flex-start);
-  >div{width:48%;}
+  border:5px $glnavy solid;
+  border-radius: 10px;
+  padding:10px;
+  >div{
+    width:48%;
+
+  &:first-child{
+    border-right:1px solid $clcc;
+    border-radius: 0;
+  }
+  }
 }
 .coupon_use_detail{
   width:100%;
@@ -592,6 +605,11 @@ footer{
   // border:1px solid #eee;
   // background: $clee;
   padding:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  input{width:100%;}
 }
 
 .coupon_cancle{

@@ -670,14 +670,20 @@ footer {
   background-position: -71px -28px;
 }
 
+.coupon_keypad2 {
+  width: 100%;
+  margin: 20px 0;
+  padding: 30px 20px;
+}
+
 .coupon_info {
   margin-left: 30px;
-  display: none;
 }
 .coupon_info:nth-of-type(3n) {
   margin-left: 0;
 }
-.coupon_info .coupon_detail {
+
+.coupon_detail {
   background: #fff;
   border: 5px #052A4A solid;
   border-radius: 10px;
@@ -690,36 +696,39 @@ footer {
   flex-direction: column;
   padding: 30px 0;
 }
-.coupon_info .coupon_detail > img {
+.coupon_detail > img {
   width: 100%;
   max-width: 200px;
 }
-.coupon_info .coupon_detail > ul {
+.coupon_detail > ul {
   width: 90%;
   margin: 15px auto;
   padding: 0;
 }
-.coupon_info .coupon_detail > ul li {
+.coupon_detail > ul li {
   padding: 15px 0;
   border-bottom: 1px solid #ccc;
 }
-.coupon_info .coupon_detail > ul li:first-child {
+.coupon_detail > ul li:first-child {
   border-top: 1px solid #ccc;
 }
-.coupon_info .coupon_detail > ul li .title {
+.coupon_detail > ul li .title {
   width: 100px;
   display: inline-block;
   vertical-align: top;
 }
-.coupon_info .coupon_detail > ul li .detail {
+.coupon_detail > ul li .detail {
   font-weight: bold;
   width: calc(100% - 100px);
   display: inline-block;
   word-break: keep-all;
 }
 
+.coupon_detail2 {
+  border: none;
+}
+
 .coupon_info2 {
-  display: none;
   width: 900px;
 }
 .coupon_info2 .btn_2set {
@@ -731,16 +740,23 @@ footer {
   width: 49%;
 }
 
-.testdiv {
+.coupon_cash {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   display: -moz-flex;
   display: -o-flex;
   -webkit-flex-wrap: wrap;
+  border: 5px #052A4A solid;
+  border-radius: 10px;
+  padding: 10px;
 }
-.testdiv > div {
+.coupon_cash > div {
   width: 48%;
+}
+.coupon_cash > div:first-child {
+  border-right: 1px solid #ccc;
+  border-radius: 0;
 }
 
 .coupon_use_detail {
@@ -748,6 +764,13 @@ footer {
   height: 610px;
   position: relative;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.coupon_use_detail input {
+  width: 100%;
 }
 
 .coupon_cancle {
