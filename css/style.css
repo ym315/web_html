@@ -587,7 +587,7 @@ footer {
 }
 
 .counpon_search, .coupon_info {
-  width: 500px;
+  width: 460px;
   margin: 0;
   padding: 20px;
   background: #fff;
@@ -678,6 +678,7 @@ footer {
 
 .coupon_info {
   margin-left: 30px;
+  display: none;
 }
 .coupon_info:nth-of-type(3n) {
   margin-left: 0;
@@ -729,7 +730,7 @@ footer {
 }
 
 .coupon_info2 {
-  width: 900px;
+  width: 850px;
 }
 .coupon_info2 .btn_2set {
   width: calc(100% - 20px);
@@ -779,7 +780,8 @@ footer {
   padding: 10px;
   overflow: auto;
   margin-top: 30px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  max-height: 350px;
 }
 .coupon_cancle > table {
   width: 100%;
@@ -1000,7 +1002,6 @@ footer {
   position: fixed;
   left: 0;
   top: 0;
-  display: none;
 }
 
 .popup {
@@ -1089,8 +1090,4 @@ footer {
 .popup .failed .failed_msg {
   color: #E4404D;
   font-weight: bold;
-}
-
-.popup_test {
-  display: none;
 }/*# sourceMappingURL=style.css.map */

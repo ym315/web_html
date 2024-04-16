@@ -79,13 +79,92 @@
                     <button class="btn">쿠폰취소</button>
                 </div>
 
+                
+                <div class="coupon_info coupon_info2">
+                    <div class="coupon_cash">
+                        <div class="coupon_detail coupon_detail2">
+                            <img src="https://image.gift-n.net/mall/goods/0000034989.jpg" alt="searchcoupon_image">
+                            <ul>
+                                <li>
+                                    <div class="title">쿠폰번호</div><div class="detail">123412341234</div>
+                                </li>
+                                <li>
+                                    <div class="title">상품명</div><div class="detail">
+                                        [화락바베큐] 바베큐치킨 [중]반/반 - 5가지맛 중 택2 [화락바베큐]
+                                        바베큐치킨 [중]반/반 - 5가지맛 중 택2
+                                    </div>                                
+                                </li>
+                                <li>
+                                    <div class="title">상품가</div><div class="detail">10,000,000,000</div>                                
+                                </li>
+                                <li>
+                                    <div class="title">쿠폰상태</div><div class="detail point">미사용 쿠폰</div>                                
+                                </li>
+                                <li>
+                                    <div class="title">유효기간</div><div class="detail">2024-03-03</div>                                
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="coupon_use_detail">
+                        <div class="coupon_keypad coupon_keypad2">
+                            <button class="number">1</button>
+                            <button class="number">2</button>
+                            <button class="number">3</button>
+                            <button class="number">4</button>
+                            <button class="number">5</button>
+                            <button class="number">6</button>
+                            <button class="number">7</button>
+                            <button class="number">8</button>
+                            <button class="number">9</button>
+                            <button class="sign"><i class="reset"></i></button>
+                            <button class="number">0</button>
+                            <button class="sign"><i class="delete"></i></button>
+                        </div>
+                        <input type="text" class="text_normal" placeholder="사용금액기재">
+                        <div class="btn_2set">
+                            <button class="btn">전액 사용</button>
+                            <button class="btn">선택 금액 사용</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="coupon_cancle">
+                        <table>
+                            <thead>
+                                <td>취소처리</td>
+                                <td class="date">사용일시</td>
+                                <td>사용지점</td>
+                                <td>사용금액</td>
+                                <td class="date">취소일시</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><button class="btn">사용취소</button></td>
+                                    <td class="date">2024-03-25 오후 3:14:27</td>
+                                    <td>giftnshop</td>
+                                    <td>50,000</td>
+                                    <td class="date">2024-03-25 오후 3:14:27</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="point">미사용 쿠폰</span></td>
+                                    <td class="date">2024-03-25 오후 3:14:27</td>
+                                    <td>giftnshop</td>
+                                    <td>50,000</td>
+                                    <td class="date">2024-03-25 오후 3:14:27</td>
+                                </tr>    
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
+                </div>
+
 
             </section>
             
             <footer></footer>
         </article>
 
-        <div class="popupdiv popup_test">
+        <div class="popupdiv">
             <div class="popup">
                 <div class="failed">
                     <div class="popup_icon"><i></i></div>
@@ -129,12 +208,6 @@
             e.preventDefault();
             $('.coupon_info').show();
         });
-        
-        $('.btn_test').on('click',function(e){
-            e.preventDefault();
-            $('.popup_test').show();
-        })
-    
 
 
 

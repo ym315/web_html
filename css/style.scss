@@ -464,7 +464,7 @@ footer{
 }
 
 .counpon_search,.coupon_info{
-  @include layout(500px,0,20px);
+  @include layout(460px,0,20px);
   background: $clwhite;
   border:1px solid #ccc;
   
@@ -537,7 +537,7 @@ footer{
 .coupon_info{
   margin-left:30px;
   &:nth-of-type(3n){margin-left:0;}
-  // display: none;
+  display: none;
 }
 .coupon_detail{
   background:$clwhite;
@@ -572,7 +572,7 @@ footer{
   border:none;
 }
 .coupon_info2{
- width:900px;
+ width:850px;
  
 
   .btn_2set{
@@ -619,7 +619,8 @@ footer{
   padding:10px;
   overflow: auto;
   margin-top:30px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  max-height:350px;
   
   >table{
     width:100%;    
@@ -797,7 +798,6 @@ footer{
   z-index: 99;
   position: fixed;
   left:0; top:0;
-  display:none;
 }
 
 .popup{
@@ -865,4 +865,3 @@ footer{
     .failed_msg{color:$pointred; font-weight: bold;}
   }
 }
-.popup_test{display: none;}
